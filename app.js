@@ -9,7 +9,7 @@ const port = 3005;
 
 app.use(cors())
 app.use(express.json());
-require('./Conn/conn')
+//require('./Conn/conn')
 
 app.use('', base);
 app.use('/api', addComponentName);
