@@ -8,11 +8,12 @@ const ComponentName = new mongoose.Schema({
   slno:{
     type: Number,
     required: true,
+    unique: true, // Ensure slno is unique
   },
   Parent: {
     type: String,
     required: true,
-  }
+  }  
 });
-
+ 
 module.exports = mongoose.model('Component Name', ComponentName);

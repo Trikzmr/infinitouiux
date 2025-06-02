@@ -10,7 +10,7 @@ const apicall = async (req, res) => {
     } catch (error) {
         console.log(error)
         res.status(500).json({ message: "Internal Server Error" });
-    }
+    }  
 } 
 
 api.get('/getComponentName', apicall);
